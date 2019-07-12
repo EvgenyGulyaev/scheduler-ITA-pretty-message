@@ -1,0 +1,30 @@
+{
+  "name": "scheduler-ita-pretty-message",
+  "version": "0.0.1",
+  "description": "It's application for prettied message from sfu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvgenyGulyaev/scheduler-ITA-pretty-message.git"
+  },
+  "keywords": [
+    "ita",
+    "sfu",
+    "message"
+  ],
+  "author": "Evgeny Gulyaev (wardercompany@gmail.com)",
+  "readmeFilename": "README.md",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvgenyGulyaev/scheduler-ITA-pretty-message/issues"
+  },
+  "homepage": "https://github.com/EvgenyGulyaev/scheduler-ITA-pretty-message#readme",
+  "dependencies": {
+    "scheduler-ita": "^0.0.3",
+    "lodash.chunk": "^4.2.0"
+  }
+}
