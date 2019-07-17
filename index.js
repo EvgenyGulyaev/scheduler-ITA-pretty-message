@@ -41,20 +41,32 @@ const selectData = (data = [], day = 6) => {
 }
 
 const getSchedulePerWeek = async (id, type = html, week = allWeek) => {
-  const { schedule, name, firstWeek } = await getData(id, type);
-  week -= 1;
-  if (week >= 0) {
-    return { name, data: getPrettiedTable(schedule[week]), week: firstWeek + week };
+  try {
+    const { schedule, name, firstWeek } = await getData(id, type);
+    week -= 1;
+    if (week >= 0) {
+      return { name, data: getPrettiedTable(schedule[week]), week: firstWeek + week };
+    }
+    const data = schedule.map(el => getPrettiedTable(el));
+    return { name, data }
   }
-  const data = schedule.map(el => getPrettiedTable(el));
-  return { name, data }
+  catch (e) {
+    console.log('error', e)
+    return {}
+  }
 }
 
 const getSchedulePerDayWeek = async (id, day = 6, type = html, week = allWeek) => {
-  const { schedule, name, firstWeek } = await getData(id, type);
-  const allDays = getPrettiedTable(schedule[week]);
-  const data = selectData(allDays, day);
-  return { name, data, week: firstWeek + week };
+  try {
+    const { schedule, name, firstWeek } = await getData(id, type);
+    const allDays = getPrettiedTable(schedule[week]);
+    const data = selectData(allDays, day);
+    return { name, data, week: firstWeek + week };
+  }
+  catch (e) {
+    console.log('error', e)
+    return {}
+  }
 }
 
 module.exports = {
