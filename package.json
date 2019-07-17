@@ -1,6 +1,6 @@
 {
   "name": "scheduler-ita-pretty-message",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "It's application for prettied message from sfu",
   "main": "index.js",
   "scripts": {
