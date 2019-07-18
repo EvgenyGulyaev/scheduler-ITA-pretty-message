@@ -51,7 +51,7 @@ const getSchedulePerWeek = async (id, type = html, week = allWeek) => {
     return { name, data }
   }
   catch (e) {
-    console.log('error', e)
+    // console.log('error', e)
     return undefined
   }
 }
@@ -64,7 +64,7 @@ const getSchedulePerDayWeek = async (id, day = 6, type = html, week = allWeek) =
     return { name, data, week: firstWeek + week };
   }
   catch (e) {
-    console.log('error', e)
+    // console.log('error', e)
     return undefined
   }
 }
