@@ -1,6 +1,6 @@
 {
   "name": "scheduler-ita-pretty-message",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "It's application for prettied message from sfu",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/EvgenyGulyaev/scheduler-ITA-pretty-message#readme",
   "dependencies": {
-    "scheduler-ita": "^0.0.3",
+    "scheduler-ita": "^0.0.5",
     "lodash.chunk": "^4.2.0"
   }
 }
